@@ -1,0 +1,59 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+
+    position: relative;
+    // margin-top: -$section-spacer;
+
+    .error-content {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    #error-sidebar {
+        ul {
+            li {
+                border-bottom: 1px dotted #d1bfbb;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: #cbcfc5;
+                    font-size: 0.75rem;
+                }
+    
+                a {                
+                    color: #505050;
+                    display: inline-block;
+                    font-family: $body-font;
+                    font-size: 1.3125rem;
+                    font-weight: 300;
+                    line-height: 1;
+                    padding: 1rem 0.25rem;
+                    text-decoration: none;
+                    
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .error-title {
+        font-size: 1.3125rem;
+
+        @include media-breakpoint-down(lg) {
+            p {
+                padding: 0 !important;
+            }
+        }
+    }
+
+}
