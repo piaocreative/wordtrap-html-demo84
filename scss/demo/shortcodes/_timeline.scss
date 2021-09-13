@@ -1,68 +1,93 @@
-/*-----------------------------------------------------------------------------------
 
-	Shortcodes: timeline.scss
+.event {
+    margin-bottom: 1.875rem;
+}
 
------------------------------------------------------------------------------------*/
+.event-content {
+    font-size: 1.5rem;
 
-/* ----------------------------------------------------------------
-	Timeline Styles
------------------------------------------------------------------*/
+    @include media-breakpoint-down(lg) {
+        margin-top: 1rem;
+        margin-bottom: 4rem !important;
+    }
+}
 
+.event-thumbnail {
+    position: relative;
 
-.timeline {
-    background-color: #25262a;
-    padding-top: 8.125rem;
-    padding-bottom: 8.125rem;
+    img {
+        width: 100%;
+    }
 
-    .events-wrapper {
-        .events {
-            position: relative;
-            overflow: hidden;
+    .event-date {
+        position: absolute;
+        font-size: 7.5rem;
+        font-family: $heading-font;
 
-            .event {
-                padding: 0 2.8125rem;
-                position: relative;
+        &.first {
+            top: 0;
+            left: -9rem;
 
-                .event-thumbnail {
-                    padding-left: 1.875rem;
-                    position: relative;
-
-                    img {
-                        @include transition(all 0.3s ease-in-out);        
-                    }
-                }
-
-                .event-detail {
-                    margin-top: -4.375rem;
-                    position: relative;
-                    z-index: 1;
-
-                    .event-date {
-                        color: $white;
-                        font-size: 6.875rem;
-                        line-height: 8.75rem;
-                        @include transition(all 0.3s ease-in-out);                        
-                    }
-
-                    span {
-                        color: $white;
-                        font-size: 1.1875rem;
-                        line-height: 2.125rem;
-                    }
-                }                
-
-                &:hover {
-                    .event-thumbnail {
-                        img {
-                            @include scale(1.2);
-                        }
-                    }
-
-                    .event-date {
-                        @include translateX(1.875rem);
-                    }
-                }
+            @include media-breakpoint-down(xl) {
+                top: 0;
+                left: 0;
+                margin: 0 !important;
             }
         }
+
+        &.second {
+            top: 0;
+            left: -3rem;
+
+            @include media-breakpoint-down(xl) {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.event-detail {
+    position: relative;
+
+    .event-title {
+        font-size: 1.625rem;
+        color: #505050;
+    }
+
+    span {
+        color: #9a9a99;
+        font-size: 1.0625rem;
+        line-height: 2rem;
+        margin-left: 1rem;
+        display: block;
+    }
+
+    &.first {
+        bottom: -1rem;
+
+        .event-date {
+            left: -7rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            top: 0;
+
+            .event-date {
+                left: 0;
+            }
+        }
+    }
+
+    &.second {
+        @include media-breakpoint-down(sm) {
+            padding:0 !important;
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .piece {
+        display: none;
     }
 }

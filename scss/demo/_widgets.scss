@@ -130,7 +130,6 @@
 		}
 
 		.payments {
-
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;
@@ -145,6 +144,11 @@
 				
 				@include media-breakpoint-down(sm) {
 					width: 4rem !important;
+				}
+
+				@include media-breakpoint-down(md) {
+					width: 5.5rem !important;
+					height: 3.5rem;
 				}
 
 				&.visa {
@@ -243,7 +247,6 @@
 			}
 
 			#widget-subscribe-form {
-
 				input {
 					background-color: #1c1c1c;
 				}
@@ -252,15 +255,9 @@
 					margin-left: -2.875rem;
 				}
 			}
-
-		
 		}
 		
 		@include media-breakpoint-down(sm) {
-			.p-7 {
-				padding: 0 !important;
-			}
-
 			.widget-content {
 				p {
 					line-height: 1.5rem;
@@ -268,7 +265,6 @@
 				}
 
 				form {
-					width: 80%;
 					margin: auto;
 
 					input {
