@@ -41,59 +41,47 @@
 
             <div id="header-wrap">
 
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav class="navbar navbar-light">
 
-                    <div class="container px-0">
+                    <div class="container">
 
                         <!-- Logo
                         ============================================= -->
                         <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                            <img src="images/saler-txt.png" alt="Saler Logo">
+                            <img src="images/logo.png" class="img-fluid" alt="Saler Logo">
                         </a>
-                        
-                        <!-- Navbar Toggler
-                        ============================================= -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <!-- Navbar Collapse
-                        ============================================= -->
-                        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+
+                        <div class="d-flex align-items-center flex-fill">
 
                             <!-- Top Links
                             ============================================= -->
-                            <div id="top-links">
-                                <ul class="nav navbar-nav">
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item">EUR</a></li>
-                                            <li><a href="#" class="dropdown-item">AUD</a></li>
-                                            <li><a href="#" class="dropdown-item">GBP</a></li>
-                                        </ul>
-                                    </li>
+                            <ul class="navbar-nav flex-row d-none d-lg-flex" id="top-links">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">EUR</a></li>
+                                        <li><a href="#" class="dropdown-item">AUD</a></li>
+                                        <li><a href="#" class="dropdown-item">GBP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                    </ul>
+                                </li>
+                                <li id="search" class="nav-item">
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </li>
+                            </ul><!-- .top-links -->
 
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                        </ul>
-                                    </li>
+                            <div class="d-flex align-items-center ms-auto">
 
-                                    <li id="search" class="nav-item">
-                                        <a href="#"><i class="fas fa-search"></i></a>
-                                    </li>
-                                </ul>
-                            </div><!-- .top-links -->
-
-                            <!-- Top Buttons
-                            ============================================= -->
-                            <div id="top-btns">
-                                    
-                                <ul class="navbar-nav flex-row">
+                                <!-- Top Buttons
+                                ============================================= -->
+                                <ul class="navbar-nav flex-row d-none d-lg-flex" id="top-btns">
                                     <li class="nav-item">
                                         <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
                                     </li>
@@ -107,18 +95,94 @@
                                             </span>                                            
                                         </a>
                                     </li>
-                                    <li class="nav-item ps-3">
-                                        <a href="#" class="nav-link text-primary"><i class="fas fa-bars"></i></a>
-                                    </li>
-                                </ul>
+                                </ul><!-- #top-btns -->
+                                
+                                <!-- Navbar Toggler
+                                ============================================= -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                            </div><!-- #top-btns -->
-
-                        </div><!-- #header-right-col -->
+                            </div>
 
                     </div>
 
                 </nav>
+
+                <!-- Navbar Collapse
+                ============================================= -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <div class="container">
+
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="navbar-nav flex-row d-flex d-lg-none py-1" id="top-links">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                            <li id="search" class="nav-item">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul><!-- .top-links -->
+                    
+                        <!-- Primary Navigation
+                        ============================================= -->
+                        <ul id="primary-menu" class="navbar-nav">
+                            <li class="current nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                                  
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accessories</a>
+                            </li>                                    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul><!-- #primary-menu -->
+
+                        <!-- Top Buttons
+                        ============================================= -->
+                        <ul class="navbar-nav flex-row d-flex d-lg-none py-1" id="top-btns">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>                                            
+                                </a>
+                            </li>
+                        </ul><!-- #top-btns -->
+
+                    </div>
+
+                </div>
             
             </div><!-- #header-wrap -->
 
@@ -130,51 +194,51 @@
 
             <div class="content-wrap">
 
-                <!-- banner side
+                <!-- Banner
                 ============================================= -->
                 <section id="banner">
 
                     <img src="./images/banner/main-banner.png" alt="banner" class="img-fluid">
                     
-                </section><!-- #banner -->
+                </section><!-- Banner -->
 
-                <div class="bg-primary py-4">
+                <!-- Features
+                ============================================= -->
+                <div class="bg-primary py-5">
 
                     <div class="container">
 
-                        <div class="row m-0">
+                        <div class="row">
 
-                            <div class="col-lg-4">
+                            <div class="col d-md-flex justify-content-md-between">
                                 
-                                <div class="sale-banner justify-content-center d-flex">
-                                    <i class="fas fa-envelope-open-text"></i>
-                                    <div class="ms-2">
-                                        <a href="#" class="text-white">Free shipping on others above 99$</a>
-                                        <p class="mt-1 mb-0">Lorem ipsum dolor sit amet</p>
+                                <div class="fbox mb-md-0">
+                                    <div class="fbox-icon me-3">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="ps-1">
+                                        <h3 class="body-font text-white mb-1">Free shipping on others above 99$</h3>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <div class="col-lg-4">
                                 
-                                <div class="sale-banner justify-content-center d-flex">
-                                    <i class="fas fa-gift"></i>
-                                    <div class="ms-2">
-                                        <a href="#" class="text-white">Gifts for regular customers</a>
-                                        <p class="mt-1 mb-0">Lorem ipsum dolor sit amet</p>
+                                <div class="fbox mb-md-0">
+                                    <div class="fbox-icon me-3">
+                                        <i class="fas fa-gift"></i>
+                                    </div>                                    
+                                    <div class="ps-1">
+                                        <h3 class="body-font text-white mb-1">Gifts for regular customers</h3>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <div class="col-lg-4">
                                 
-                                <div class="sale-banner justify-content-center d-flex">
-                                    <i class="fas fa-award"></i>
-                                    <div class="ms-2">
-                                        <a href="#" class="text-white">100% money back gurantee</a>
-                                        <p class="mt-1 mb-0">Lorem ipsum dolor sit amet</p>
+                                <div class="fbox mb-md-0">
+                                    <div class="fbox-icon me-3">
+                                        <i class="fas fa-award"></i>
+                                    </div>                                    
+                                    <div class="ps-1">
+                                        <h3 class="body-font text-white mb-1">100% money back gurantee</h3>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
                                     </div>
                                 </div>
 
@@ -184,176 +248,40 @@
 
                     </div>
 
-                </div>
+                </div><!-- Features -->
 
-                 <!-- Feture products side
+                <!-- Feture Products
                 ============================================= -->
                 <div class="section">
 
                     <div class="container">
 
                         <div class="heading-block text-center">
-                            <p class="title">Feature product</p>
+                            <h2 class="title">Feature product</h2>
                         </div>
 
-                        <div class="row m-0">
+                        <div class="row">
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-8 order-lg-1">
 
-                                <div class="product">      
+                                <div class="product product-horiz">         
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_2.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>        
+                                        <a href="#"><img src="images/shop/product4_1.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product4_2.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onnew mt-3">New</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale">Sale</div>
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-info"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-warning"></a>
-                                            </div>
-                                            <div class="product-rating mb-1">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star empty"></i>
-                                            </div>  
-                                            <div class="product-code">FJ7579B</div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <div class="product">       
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_2.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_3.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>        
-                                    <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
-                                            <div>
-                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
-                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
-                                            </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="ontop mt-3">Top</div> 
-                                        </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-danger"></a>
-                                            </div>
-                                            <div class="product-rating mb-1">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star empty"></i>
-                                            </div>  
-                                            <div class="product-code">FJ7579B</div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <div class="product">         
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_3.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_1.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>        
-                                    <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
-                                            <div>
-                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
-                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
-                                            </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
-                                        </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-warning"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-success"></a>
-                                            </div>
-                                            <div class="product-rating mb-1">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star empty"></i>
-                                            </div>  
-                                            <div class="product-code">FJ7579B</div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-8 d-lg-flex">
-
-                                <div class="col-lg-6">
-
-                                    <div class="product pe-2">         
-                                        <div class="product-image">
-                                            <a href="#"><img src="images/shop/shop1_4.png" alt="Product Image" class="img-fluid"></a>
-                                            <a href="#"><img src="images/shop/shop1_4.png" alt="Product Image" class="img-fluid"></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-6 position-relative">
-
-                                    <div class="product body-bg">
-
-                                        <div class="product-details">
-                                            <div class="d-flex justify-content-between position-absolute top-0">
-                                                <div>
-                                                    <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
-                                                    <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
-                                                </div>
-                                                <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                                <div class="onsale">Sale</div> 
-                                            </div>
-                                            <div class="d-flex justify-content-between position-absolute bottom-0">
-                                                <div class="product-btns">
-                                                    <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                    <a href="#" class="d-inline-block bg-warning"></a>
-                                                </div>
-                                                <div class="product-rating mb-1">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star empty"></i>
-                                                </div>  
-                                                <div class="product-code">FJ7579B</div>
-                                            </div>
-    
-                                        </div>
-
-                                        <div class="product-more-details col-7">
-                                            <ul>
+                                        <div class="product-variants d-flex">
+                                            <ul class="flex-fill">
                                                 <li><a href="#" class="detail-title">Structure</a></li>
                                                 <li> <a href="#" class="detail-title">Clasp type</a></li>
                                                 <li><a href="#" class="detail-title">Neckline</a></li>
@@ -363,7 +291,7 @@
                                                 <li><a href="#" class="detail-title">Material texture</a></li>
                                                 <li> <a href="#" class="detail-title">Pockets type</a></li>
                                             </ul>
-                                            <ul>
+                                            <ul class="flex-fill">
                                                 <li><a href="#" class="detail-info">100% polyester</a></li>
                                                 <li><a href="#" class="detail-info">drawstring</a></li>
                                                 <li><a href="#" class="detail-info">stand collar</a></li>
@@ -374,34 +302,47 @@
                                                 <li><a href="#" class="detail-info">no pockets</a></li>
                                             </ul>
                                         </div>
-
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <div class="product-colors">
+                                                <span style="background-color: #8489f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
                                     </div>
-
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-0">
 
-                                <div class="product">               
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_5.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_6.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product1.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onhit mt-3">Hit</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onnew">New</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-info"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-light"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -418,27 +359,28 @@
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-0">
 
-                                <div class="product">         
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_6.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_7.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product2.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="ontop">Top</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-success"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-info"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #8489f7;"></span>
+                                                <span style="background-color: #f7848f;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -449,33 +391,33 @@
                                             </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-0">
 
-                                <div class="product">   
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_7.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_5.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product3.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-light"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-dark"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #f7b384;"></span>
+                                                <span style="background-color: #8ed8aa;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -486,20 +428,127 @@
                                             </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
+                                </div>
+
+                            </div>                            
+
+                            <div class="col-md-6 col-lg-4 order-2">
+
+                                <div class="product product-image-zoom-effect">      
+                                    <div class="product-image">
+                                        <a href="#"><img src="images/shop/product5.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>        
+                                    <div class="product-details">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
+                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
+                                            </div>
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onhit">Hit</div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #b1a4b4;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
+                                    </div>    
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-2">
 
-                                <div class="product">     
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop1_8.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop1_8.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>      
+                                        <a href="#"><img src="images/shop/product6.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>        
+                                    <div class="product-details">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
+                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
+                                            </div>
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #8ed8aa;"></span>
+                                                <span style="background-color: #84b7f7;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
+                                    </div>    
                                 </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 order-2">
+
+                                <div class="product product-image-zoom-effect">      
+                                    <div class="product-image">
+                                        <a href="#"><img src="images/shop/product7.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>        
+                                    <div class="product-details">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
+                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
+                                            </div>
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #b1a4b4;"></span>
+                                                <span style="background-color: #8489f7;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 order-2 text-center">
+
+                                <a href="#">
+                                    <img src="images/shop/ads.png" alt="Product Image" class="img-fluid"></a>
+                                </a>                                
 
                             </div>
 
@@ -507,17 +556,16 @@
 
                     </div>
 
-                </div><!-- feture products -->
+                </div><!-- Feture Products -->
 
                 <!-- Ads
                 ============================================= -->
                 <div class="ads ads1">
                     <div class="ads-bg">
-                        <img src="images/ads/ads1.png" alt="Ads Image" class="img-full w-100">
+                        <div class="ads-bg-img" style="background-image: url(images/ads/ads1.png);"></div>
                     </div>
-
                     <div class="ads-body d-flex align-items-center justify-content-center text-center">
-                        <div class="py-2">
+                        <div>
                             <h2 class="heading-font text-uppercase fw-semi-bold text-center">Sales<br>Now!</h2>
                             <a href="#" class="">Buy now</a>
                         </div>
@@ -526,96 +574,36 @@
 
                 <!-- Best Seller
                 ============================================= -->
-                <div class="section pb-2">
+                <div class="section">
 
                     <div class="container">
 
                         <div class="heading-block feture-title text-center">
-                            <p class="title">Best Sellers</p>
+                            <h2 class="title">Best Sellers</h2>
                         </div>
 
-                        <div class="row m-0">
+                        <div class="row">
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-8 order-lg-1">
 
-                                <div class="product">                  
+                                <div class="product product-horiz">         
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop2_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop2_2.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>        
-    
+                                        <a href="#"><img src="images/shop/product9_1.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product9_2.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale">Sale</div>
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-danger"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-info"></a>
-                                            </div>
-                                            <div class="product-rating mb-1">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star empty"></i>
-                                            </div>  
-                                            <div class="product-code">FJ7579B</div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-8 d-lg-flex">
-
-                                <div class="col-lg-6">
-
-                                    <div class="product pe-2">       
-                                        <div class="product-image">
-                                            <a href="#"><img src="images/shop/shop2_2.png" alt="Product Image" class="img-fluid"></a>
-                                            <a href="#"><img src="images/shop/shop2_2.png" alt="Product Image" class="img-fluid"></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-6 position-relative">
-
-                                    <div class="product body-bg">
-                                        <div class="product-details">
-                                            <div class="d-flex justify-content-between position-absolute top-0">
-                                                <div>
-                                                    <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
-                                                    <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
-                                                </div>
-                                                <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                                <div class="onsale">Sale</div> 
-                                            </div>
-                                            <div class="d-flex justify-content-between position-absolute bottom-0">
-                                                <div class="product-btns">
-                                                    <a href="#" class="d-inline-block bg-warning"></a>                                                  
-                                                    <a href="#" class="d-inline-block bg-danger"></a>
-                                                </div>
-                                                <div class="product-rating mb-1">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star empty"></i>
-                                                </div>  
-                                                <div class="product-code">FJ7579B</div>
-                                            </div>
-                                        </div>
-                                        <div class="product-more-details col-7">
-                                            <ul>
+                                        <div class="product-variants d-flex">
+                                            <ul class="flex-fill">
                                                 <li><a href="#" class="detail-title">Structure</a></li>
                                                 <li> <a href="#" class="detail-title">Clasp type</a></li>
                                                 <li><a href="#" class="detail-title">Neckline</a></li>
@@ -625,7 +613,7 @@
                                                 <li><a href="#" class="detail-title">Material texture</a></li>
                                                 <li> <a href="#" class="detail-title">Pockets type</a></li>
                                             </ul>
-                                            <ul>
+                                            <ul class="flex-fill">
                                                 <li><a href="#" class="detail-info">100% polyester</a></li>
                                                 <li><a href="#" class="detail-info">drawstring</a></li>
                                                 <li><a href="#" class="detail-info">stand collar</a></li>
@@ -636,33 +624,10 @@
                                                 <li><a href="#" class="detail-info">no pockets</a></li>
                                             </ul>
                                         </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <div class="product">              
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop2_3.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop2_4.png" alt="Product Image" class="img-fluid"></a>
-                                    </div>        
-                                    <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
-                                            <div>
-                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
-                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
-                                            </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
-                                        </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-danger"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-info"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -674,32 +639,32 @@
                                             <div class="product-code">FJ7579B</div>
                                         </div>
                                     </div>
-    
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-0">
 
-                                <div class="product">        
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop2_4.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop2_5.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product8.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-info"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -710,33 +675,33 @@
                                             </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
                                 </div>
 
-                            </div>
+                            </div>                            
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4 order-2">
 
-                                <div class="product">       
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop2_5.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop2_1.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product10.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onbest mt-3">Best</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-success"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
                                             <div class="product-rating mb-1">
                                                 <i class="fas fa-star"></i>
@@ -747,8 +712,81 @@
                                             </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 order-2">
+
+                                <div class="product product-image-zoom-effect">      
+                                    <div class="product-image">
+                                        <a href="#"><img src="images/shop/product11.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>        
+                                    <div class="product-details">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
+                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
+                                            </div>
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 order-2">
+
+                                <div class="product product-image-zoom-effect">      
+                                    <div class="product-image">
+                                        <a href="#"><img src="images/shop/product12.png" alt="Product Image" class="img-fluid"></a>
+                                    </div>        
+                                    <div class="product-details">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
+                                                <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
+                                            </div>
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onbest">Best</div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
+                                            </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
+                                            <div class="product-code">FJ7579B</div>
+                                        </div>
+                                    </div>    
                                 </div>
 
                             </div>
@@ -763,7 +801,7 @@
                 ============================================= -->
                 <div class="container">
 
-                    <div class="row m-0">
+                    <div class="row">
 
                         <div class="col-12">
                             <div class="logos">
@@ -787,96 +825,118 @@
                     <div class="container">
 
                         <div class="heading-block text-center">
-                            <p class="title">New Products</p>
+                            <h2 class="title">New Products</h2>
                         </div>
 
-                        <div class="row m-0">
+                        <div class="row">
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4">
 
-                                <div class="product">              
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop3_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop3_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product13.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onnew mt-3">New</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onnew">New</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-success"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4">
 
-                                <div class="product">                   
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop3_2.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop3_3.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product14.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onnew mt-3">New</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onnew">New</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-success"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
+                                    </div>    
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-lg-4">
 
-                                <div class="product">       
+                                <div class="product product-image-zoom-effect">      
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/shop3_3.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/shop3_1.png" alt="Product Image" class="img-fluid"></a>
+                                        <a href="#"><img src="images/shop/product15.png" alt="Product Image" class="img-fluid"></a>
                                     </div>        
                                     <div class="product-details">
-                                        <div class="d-flex justify-content-between position-absolute top-0">
+                                        <div class="d-flex justify-content-between">
                                             <div>
                                                 <h3 class="product-title m-0"><a href="#">Dress</a></h3>           
                                                 <div class="product-info mb-2"><span class="product-categories"><a href="#">Name Brand</a></span></div>        
                                             </div>
-                                            <div class="product-price d-block text-center">$159<del class="d-block">$235</del></div> 
-                                            <div class="onsale">Sale</div> 
-                                            <div class="onnew mt-3">New</div> 
+                                            <div class="text-end">
+                                                <div class="product-price d-block text-end mb-2">$159<del class="d-block">$235</del></div> 
+                                                <div class="onsale mb-1">Sale</div> 
+                                                <div class="onnew">New</div> 
+                                            </div>                                            
                                         </div>
-                                        <div class="d-flex justify-content-between position-absolute bottom-0">
-                                            <div class="product-btns">
-                                                <a href="#" class="d-inline-block bg-dark"></a>                                                  
-                                                <a href="#" class="d-inline-block bg-success"></a>
+                                        <div class="w-100 d-flex justify-content-between align-items-center position-absolute bottom-0">
+                                            <div class="product-colors">
+                                                <span style="background-color: #84b7f7;"></span>
+                                                <span style="background-color: #f7b384;"></span>
                                             </div>
+                                            <div class="product-rating mb-1">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star empty"></i>
+                                            </div>  
                                             <div class="product-code">FJ7579B</div>
                                         </div>
-                                    </div>
-    
+                                    </div>    
                                 </div>
 
                             </div>
@@ -891,11 +951,10 @@
                 ============================================= -->
                 <div class="ads ads1">
                     <div class="ads-bg">
-                        <img src="images/ads/ads2.png" alt="Ads Image" class="img-full w-100">
+                        <div class="ads-bg-img" style="background-image: url(images/ads/ads2.png);"></div>
                     </div>
-
-                    <div class="ads-body d-flex align-items-center offset-md-7 text-center">
-                        <div class="py-2">
+                    <div class="ads-body d-flex align-items-center offset-6 offset-md-7 text-center">
+                        <div>
                             <h2 class="heading-font m-0 text-uppercase text-secondary text-center fw-semi-bold"><span class="text-primary">50%</span><br>Sale</h2>
                             <a href="#" class="text-primary">Buy now</a>
                         </div>
@@ -908,61 +967,36 @@
 
                     <div class="container">
 
-                        <div class="row g-0">
+                        <div class="row">
 
-                            <div class="col-lg-4">
-                            
-                                <article class="post mt-2">     
-                                    <div class="post-content">
-                                        <p class="entry-title text-primary mb-3 fw-semi-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                                        <div class="post-thumbnail">
-                                            <a href="#"><img src="./images/posts/post1.png" class="img-fluid" alt="Posts Collection"></a>
-                                        </div>  
-                                        <div class="entry-meta d-flex justify-content-between align-items-center p-3">
-                                            <div class="entry-categories d-flex align-items-center">
-                                                <img src="./images/posts/avarta.png" class="img-fluid">
-                                                <div class="ms-2"><a href="#">Admin</a></div>
-                                            </div>
-                                            <div class="ms-2"><a href="#">April 19, 2021</a></div>
-                                        </div>     
-                                        <div class="entry-content px-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-                                        </div>
-                                    </div>
-                                </article>
+                            <div class="col-lg-7 offset-lg-1 order-lg-last">
     
-                            </div>
-    
-                            <div class="col-lg-7 offset-lg-1">
-    
-                                <div class="heading-block mb-4">
-                                    <p class="title mb-2">Our News</p>
-                                    <h5 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                        tempor incididunt ut labore et dolore magna aliqua. </h5>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                                        culpa qui officia deserunt mollit anim id est laborum. </p>
+                                <div class="heading-block mb-5">
+                                    <p class="title">Our News</p>
                                 </div>
 
-                                <div class="d-md-flex gap-3">
+                                <h5 class="body-font fw-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
+
+                                <p class="fw-light mb-5">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                
+                                <div class="row">
                                     
                                     <div class="col-lg-6">
 
-                                        <article class="post m-0">     
-                                            <div class="post-content">
-                                                <div class="post-thumbnail">
-                                                    <a href="#"><img src="./images/posts/post2.png" class="img-fluid" alt="Posts Collection"></a>
-                                                </div>  
-                                                <div class="entry-meta d-flex justify-content-between align-items-center p-3">
-                                                    <div class="entry-categories d-flex align-items-center">
+                                        <article class="post m-0">
+                                            <div class="post-thumbnail">
+                                                <a href="#"><img src="./images/posts/post2.png" class="img-fluid w-100" alt="Posts Collection"></a>
+                                            </div>       
+                                            <div class="post-content">                                                
+                                                <div class="entry-meta d-flex justify-content-between align-items-center p-4">
+                                                    <a href="#" class="post-author">
                                                         <img src="./images/posts/avarta.png" class="img-fluid">
-                                                        <div class="ms-2"><a href="#">Admin</a></div>
-                                                    </div>
-                                                    <div><a href="#">April 19, 2021</a></div>
+                                                        <span class="ms-2">Admin</span></span>
+                                                    </a> 
+                                                    <div class="post-date ms-2"><a href="#">April 19, 2021</a></div>
                                                 </div>     
-                                                <div class="entry-content px-3">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                                <div class="entry-content px-4">
+                                                    <h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </h3>
                                                 </div>
                                             </div>
                                         </article>
@@ -971,15 +1005,15 @@
 
                                     <div class="col-lg-6">
 
-                                        <article class="post m-0 bg-primary">     
+                                        <article class="post post-no-thumbnail">     
                                             <div class="post-content">
-                                                <p class="entry-title text-white mb-7 text-center fw-semi-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                                                <div class="entry-meta d-flex justify-content-between align-items-center">
-                                                    <div class="entry-categories d-flex align-items-center">
+                                                <h3 class="entry-title h4 heading-font text-white text-center fw-semi-bold  mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h3>
+                                                <div class="entry-meta d-flex justify-content-between align-items-center w-100">
+                                                    <a href="#" class="post-author">
                                                         <img src="./images/posts/avarta.png" class="img-fluid">
-                                                        <div class="ms-2"><a href="#">Admin</a></div>
-                                                    </div>
-                                                    <div><a href="#">April 19, 2021</a></div>
+                                                        <span class="ms-2">Admin</span></span>
+                                                    </a> 
+                                                    <div class="post-date ms-2"><a href="#">April 19, 2021</a></div>
                                                 </div>     
                                             </div>
                                         </article>
@@ -987,6 +1021,30 @@
                                     </div>
 
                                 </div>
+    
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <h4 class="text-primary pt-4 mb-5 fw-semi-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h4>
+                            
+                                <article class="post mt-2">    
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img src="./images/posts/post1.png" class="img-fluid w-100" alt="Posts Collection"></a>
+                                    </div>  
+                                    <div class="post-content">
+                                        <div class="entry-meta d-flex justify-content-between align-items-center p-4">
+                                            <a href="#" class="post-author">
+                                                <img src="./images/posts/avarta.png" class="img-fluid">
+                                                <span class="ms-2">Admin</span></span>
+                                            </a>
+                                            <div class="post-date ms-2"><a href="#">April 19, 2021</a></div>
+                                        </div>     
+                                        <div class="entry-content px-4">
+                                            <h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </h3>
+                                        </div>
+                                    </div>
+                                </article>
     
                             </div>
 
@@ -1010,60 +1068,72 @@
 
                 <div class="container">
 
-                    <div class="row m-0">
+                    <div class="row">
 
-                        <div class="col-md-6 col-xl-4">
+                        <div class="col-lg-7 col-xl-6">
 
-                            <div class="widget widget-links text-center text-lg-start">
-                                <p class="widget-title text-white text-uppercase body-font" style="font-size:0.875rem;">saler</p>
-                                <div class="widget-content d-md-flex">
+                            <!-- Logo
+                            ============================================= -->
+                            <a href="index.html" class="footer-brand" data-dark-logo="images/logo_white.png">
+                                <img src="images/logo_white.png" class="img-fluid" alt="Saler Logo">
+                            </a>
 
-                                    <div class="col-md-6 col-lg-6">
-                                        <h6 class="widget-title">Navigator</h6>
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Catalog</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Contacts</a></li>
-                                        </ul>
-                                    </div>
+                            <div class="row">
 
-                                    <div class="col-md-6 col-lg-6">
-                                        <h6 class="widget-title">Catalog</h6>
-                                        <ul>
-                                            <li><a href="#">Hoodie</a></li>
-                                            <li><a href="#">T-shirt</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Sweekshirt</a></li>
-                                            <li><a href="#">Dress</a></li>
-                                        </ul>
-                                    </div>
-                                </div>                                    
-                            </div> 
+                                <div class="col-md-6 d-flex">
 
-                        </div>
-
-                        <div class="col-md-6 col-xl-3 pt-3">
-
-                            <div class="widget widget-subscribe">
-                                <div class="widget-content">
-                                    <h6 class="widget-title">Newsletter</h6>
-                                    <form id="widget-subscribe-form" action="#" method="post">
-                                        <div class="input-group">
-                                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email  border-0" placeholder="Email">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary body-font text-white" type="submit">Subscribe</button>
-                                            </div>
+                                    <div class="widget widget-links flex-fill">                                
+                                        <div class="widget-content">
+                                            <h6 class="widget-title">Navigator</h6>
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Catalog</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Contacts</a></li>
+                                            </ul>
                                         </div>
-                                    </form>
-                                    <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-                                </div>                                    
-                            </div>
+                                    </div>
+
+                                    <div class="widget widget-links flex-fill">                                
+                                        <div class="widget-content">
+                                            <h6 class="widget-title">Catalog</h6>
+                                            <ul>
+                                                <li><a href="#">Hoodie</a></li>
+                                                <li><a href="#">T-shirt</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Sweekshirt</a></li>
+                                                <li><a href="#">Dress</a></li>
+                                            </ul>
+                                        </div>                                    
+                                    </div> 
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="widget widget-subscribe">
+                                        <div class="widget-content">
+                                            <h6 class="widget-title">Newsletter</h6>
+                                            <form id="widget-subscribe-form" action="#" method="post">
+                                                <div class="input-group">
+                                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email  border-0" placeholder="Email">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary body-font text-white" type="submit">Subscribe</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <p class="pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                                        </div>                                    
+                                    </div>
+
+                                </div>
+
+                            </div>                            
 
                         </div>
 
-                        <div class="col-xl-4 offset-xl-1">
+                        <div class="col-lg-5 offset-xl-1">
 
                             <div class="widget widget-custom-html">
                                 <h2 class="h1">Get in touch</h2>
@@ -1106,43 +1176,38 @@
 
                 <div class="container">
 
-                    <div class="row g-0 justify-content-between align-items-center">
+                    <div class="row">
     
-                        <div class="col-lg-auto">
+                        <div class="col">
 
-                            <div class="widget widget-social mb-lg-0">
-                                <div class="widget-content">
-                                    <div class="row align-items-center justify-content-between">
-                                        <div class="col-sm-auto">
-                                            <ul class="social-icons d-flex align-items-center justify-content-center my-1">
-                                                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Google"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-auto d-flex justify-content-center">
-                                            <span class="copyright body-font my-1" id="copyrights">&copy; Copyright 2021</span>
-                                        </div>
+                            <div class="d-flex align-items-center flex-column flex-lg-row">
+
+                                <div class="widget widget-social mb-lg-0 order-lg-0">
+                                    <div class="widget-content">
+                                        <ul class="social-icons d-flex align-items-center">
+                                            <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Google"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
 
-                        </div>
-    
-                        <div class="col-lg-auto">
-    
-                            <div class="widget widget-payment mb-lg-0">
-                                <div class="widget-content">
-                                    <div class="payments d-flex justify-content-center">
-                                        <span class="payment-icon"><img src="images/payments/express.png" alt="American Express"></span>
-                                        <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
-                                        <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal"></span>
-                                        <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard"></span>
-                                        <span class="payment-icon"><img src="images/payments/jcb.png" alt="JCB"></span>
-                                    </div>                                    
+                                <div class="copyright body-font my-1 order-last order-lg-1" id="copyrights">&copy; Copyright 2021</div>
+
+                                <div class="widget widget-payment ms-lg-auto order-lg-2">
+                                    <div class="widget-content">
+                                        <div class="payments d-flex">
+                                            <span class="payment-icon"><img src="images/payments/express.png" alt="American Express"></span>
+                                            <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
+                                            <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal"></span>
+                                            <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard"></span>
+                                            <span class="payment-icon"><img src="images/payments/jcb.png" alt="JCB"></span>
+                                        </div>                                    
+                                    </div>
                                 </div>
+
                             </div>
     
                         </div>

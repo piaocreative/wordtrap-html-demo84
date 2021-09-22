@@ -1,89 +1,80 @@
-
 .event {
     margin-bottom: 1.875rem;
-}
+    
+    &.first {
+        @include media-breakpoint-up(xxxl) {
+            .event-date {
+                left: -9.625rem;
+                bottom: 3.5rem;
+                top: auto;                
+            }
+        }                
+    }
 
-.event-content {
-    font-size: 1.5rem;
+    &.last {
+        margin-top: 5rem;
 
-    @include media-breakpoint-down(lg) {
-        margin-top: 1rem;
-        margin-bottom: 4rem !important;
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            width: 43.75rem;            
+
+            .event-thumbnail {
+                flex: 1 0 auto;
+                width: 45%;
+            }
+
+            .event-detail {
+                padding-left: 4.375rem;
+            }
+        }
     }
 }
 
 .event-thumbnail {
     position: relative;
+    height: 20.125rem;
 
     img {
-        width: 100%;
+        object-position: top;
     }
 
-    .event-date {
-        position: absolute;
-        font-size: 7.5rem;
+    .event-date {        
+        color: $primary;
         font-family: $heading-font;
+        font-size: 7.5rem;
+        font-weight: 900;
+        line-height: 1;
+        position: absolute;
+        left: -1.125rem;
+        top: -5rem;
 
-        &.first {
-            top: 0;
-            left: -9rem;
-
-            @include media-breakpoint-down(xl) {
-                top: 0;
-                left: 0;
-                margin: 0 !important;
-            }
-        }
-
-        &.second {
-            top: 0;
-            left: -3rem;
-
-            @include media-breakpoint-down(xl) {
-                top: 0;
-                left: 0;
-            }
+        @include media-breakpoint-up(sm) {
+            left: -2.125rem;
         }
     }
 }
 
 .event-detail {
     position: relative;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
 
     .event-title {
-        font-size: 1.625rem;
         color: #505050;
+        font-family: $body-font;
+        font-size: 1.625rem;
+        font-weight: 300;        
+        margin-bottom: 1rem;
     }
 
-    span {
+    p {
         color: #9a9a99;
         font-size: 1.0625rem;
+        font-weight: 300;
         line-height: 2rem;
         margin-left: 1rem;
         display: block;
-    }
-
-    &.first {
-        bottom: -1rem;
-
-        .event-date {
-            left: -7rem;
-        }
-
-        @include media-breakpoint-down(lg) {
-            top: 0;
-
-            .event-date {
-                left: 0;
-            }
-        }
-    }
-
-    &.second {
-        @include media-breakpoint-down(sm) {
-            padding:0 !important;
-        }
-    }
+    }    
 }
 
 @include media-breakpoint-down(xl) {

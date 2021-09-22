@@ -17,6 +17,7 @@
 
 #page-title {
 	position: relative;
+	
 	@include media-breakpoint-down(lg) {
 		padding-top: 0 !important;
 		padding-left: 1rem !important;

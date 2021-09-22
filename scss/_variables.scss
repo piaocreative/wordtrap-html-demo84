@@ -12,10 +12,10 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   #82a762;
-$body-color:                    #050505;
-$heading-color:                 #000000;
-$third-color:                   #2e2e2e;
+$theme-color:                  #82a762;
+$body-color:                   #050505;
+$heading-color:                #000000;
+$third-color:                  #2e2e2e;
 
 //-------------------- Redefine Bootstrap Variables ------------//
 
@@ -29,37 +29,37 @@ $danger:                      #f7848f;
 $success:                     #8ed8aa;
 $light:                       #b1a4b4;
 
-//-------------------- Font Families --------------------//
-//-------------------- Font Families --------------------//
+
+// Gutter Width
+$grid-gutter-width:				1.875rem;
+
+
+// Font Families
 $body-font:                     'Roboto', sans-serif;
 $heading-font:                  'Elsie', cursive;
 
 
 // Font sizes
+$base-font-size:                1rem;
+
 $h1-font-size:                	4.5rem;
 $h2-font-size:                	3.75rem;
 $h3-font-size:                	2.5rem;
-$h4-font-size:                	1.75rem;
+$h4-font-size:                	1.5rem;
 $h5-font-size:                	1.3125rem;
-$h6-font-size:               	  0.75rem;
+$h6-font-size:               	0.875rem;
 
 
-// space//
-$spacer: 2rem !default;
-
-$spacers:(
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 3,
-  7: $spacer * 4,
-  8: $spacer * 8,
-) !default;
-
-$grid-gutter-width:             2rem;
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+);
 
 
 //-------------------- Top Bar --------------------//
@@ -70,27 +70,27 @@ $topbar-hover-color:            #ddcef5;
 
 //-------------------- Header --------------------//
 
-$header-height:                 4.5rem;
+$header-height:                 6.84375rem;
 
 // Sticky Header
-$sticky-header-height:          5.625rem;
+$sticky-header-height:          5.15625rem;
 
 
 // top Button
-$top-btn-font-size:        		  1.25rem;
+$top-btn-font-size:        		1.25rem;
 $top-btn-font-color:       		#ffffff;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:				4rem;
+$section-spacer:				6.125rem;
 
 
 
 // Forms
 $input-color:                   $body-color;
 $input-border-color:            #dee8ec;
-$input-border-width:			      1px;
+$input-border-width:			1px;
 $input-btn-focus-color-opacity: 1;
 
 $input-btn-padding-y:           0.875rem;
@@ -220,4 +220,4 @@ $plancast:                    #222222;
 $appstore:                    #000000;
 $pinterest:                   #C8232C;
 $fivehundredpx:               #111111;
-$si_text_color:               #FFFFFF;
+$si_text_color:                #ffffff;

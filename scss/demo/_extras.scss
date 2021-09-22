@@ -44,18 +44,17 @@ a {
 
 #subscribe-form {
     width: 20%;
-}
 
-@include media-breakpoint-down(sm) {
-    #subscribe-form {
+    @include media-breakpoint-down(sm) {
         width: 50% !important;
     }
 }
 
+
+
 // -----------------about side------------------------//
 
 .about-banner-content {
-
     p {
         font-size: 1.0625rem;
         color: #9a9a99;
@@ -69,7 +68,6 @@ a {
         line-height: 2rem;
         font-weight: 300;
     }
-
 }
 
 .about {
@@ -109,4 +107,3 @@ a {
         font-family: $body-font;
     }
 }
-

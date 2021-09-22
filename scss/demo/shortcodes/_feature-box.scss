@@ -10,15 +10,30 @@
 -----------------------------------------------------------------*/
 
 .fbox {	
-	flex: 1;
+	display: flex;
+	align-items: flex-start;
 	position: relative;
-	margin-bottom: 1.875rem;
 
 	&:not(:last-child) {
-		border-right: 1px solid #282828;
-	}
+		margin-bottom: 1.875rem;
+	}	
 
 	.fbox-icon {
-		margin-bottom: 1.375rem;
+		i {
+			font-size: 1.5rem;
+			color: $white;
+		}
+	}
+
+	h3 {
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1;
+	}
+	
+	p {
+		font-size: 0.875rem;
+		color: #aec49c;
+		font-family: $body-font;
 	}
 }

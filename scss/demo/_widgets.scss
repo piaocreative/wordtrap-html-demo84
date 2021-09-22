@@ -17,6 +17,7 @@
 
 .widget {
 	position: relative;
+	margin-bottom: 1rem;
 
 	p {
 		font-family: $body-font;
@@ -59,6 +60,7 @@
 					height: 2.8125rem;		
 					vertical-align: middle;
 					text-align: center;
+
 					@include transition(all 0.3s ease-in-out);
 		
 					&:hover {
@@ -76,8 +78,6 @@
 			}
 		}
 	}
-
-
 
 	// Widget - Links
 	&.widget-links {
@@ -130,41 +130,22 @@
 		}
 
 		.payments {
-			.payment-icon {
-				display: inline-block;
-				vertical-align: middle;
-				margin-right: .5rem;
-				width: 5rem;
-				height: 2.5rem;
+			.payment-icon {				
 				background-color: #2e2e2e;
+				display: inline-block;
+				height: 2.5rem;
+				width: 5rem;
 				padding: 0.2rem;
-				background-size: 80% auto;
-				background-repeat: no-repeat;
-				background-position: center;
-				
-				@include media-breakpoint-down(sm) {
-					width: 4rem !important;
+				text-align: center;
+				vertical-align: middle;				
+
+				img {
+					height: 100%;
+					width: auto;
 				}
 
-				@include media-breakpoint-down(md) {
-					width: 5.5rem !important;
-					height: 3.5rem;
-				}
-
-				&.visa {
-					background-image: url(../images/payments/visa.svg);
-				}
-
-				&.paypal {
-					background-image: url(../images/payments/paypal.svg);
-				}
-
-				&.express {
-					background-image: url(../images/payments/express.svg);
-				}
-
-				&.mastercard {
-					background-image: url(../images/payments/mastercard.svg);
+				&:not(:last-child) {
+					margin-right: .5rem;
 				}
 			}
 		}
@@ -179,8 +160,6 @@
 		}
 
 		.widget-content {
-
-
 			a {
 				display: block;
 				text-decoration: none;
@@ -201,10 +180,6 @@
 					letter-spacing: 0.1rem
 				}
 			}
-
-			@include media-breakpoint-down(lg) {
-				text-align: left !important;
-			}
 		}
 	}
 
@@ -214,8 +189,8 @@
 			p {
 				letter-spacing: 0.1rem
 			}
-			#widget-feedback-form {
 
+			#widget-feedback-form {
 				input {
 					background-color: #f9f9f9;
 					color:#d0d0d0;
@@ -253,27 +228,6 @@
 				
 				.input-group-append {
 					margin-left: -2.875rem;
-				}
-			}
-		}
-		
-		@include media-breakpoint-down(sm) {
-			.widget-content {
-				p {
-					line-height: 1.5rem;
-					margin-bottom: 1rem !important;
-				}
-
-				form {
-					margin: auto;
-
-					input {
-						padding: 0.5rem 1.5rem;
-					}
-
-					button {
-						padding: 0.8rem 1rem;
-					}
 				}
 			}
 		}

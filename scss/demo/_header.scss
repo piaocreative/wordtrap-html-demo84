@@ -22,7 +22,7 @@
 
 	// Transparent header
 	&.transparent-header {
-		background-color: #857db8;
+		background-color: #1f1f1f;
 		z-index: 199;
 
 		@include media-breakpoint-up(lg) {
@@ -35,17 +35,14 @@
 				top: -$header-height;
 				margin-bottom: -$header-height;
 			}
+
+			#navbarCollapse {
+				background-color: $white;
+				position: absolute;
+				top: 100%;
+				width: 100%;				
+			}
 		}			
-	}
-}
-
-#header-wrap {
-	padding-left: 4.375rem;
-	padding-right: 4.375rem;
-
-	@include media-breakpoint-down(sm) {
-		padding-left: 2.375rem;
-		padding-right: 2.375rem;
 	}
 }
 
@@ -53,8 +50,21 @@
 	flex-wrap: nowrap;
 }
 
+.navbar {
+	padding-top: 2.125rem;
+	padding-bottom: 2.125rem;
+}
+
 .navbar-toggler {
+	border: 0;
 	border-radius: 0;
+	color: $theme-color;
+	margin-left: 2.8125rem;
+	padding: 0;
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28173, 180, 164, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}	
 }
 
 .navbar-collapse {
@@ -76,15 +86,12 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 2.25rem;
+	margin-right: 4.6875rem;
 
 	img {
-		width: 70%;
-		height: auto;
+		max-width: 6.9375rem;
 	}
 }
-
-
 
 
 /* ----------------------------------------------------------------
@@ -100,12 +107,6 @@
 
 
 #top-btns {
-	padding-top: 1rem;
-
-	@include media-breakpoint-up(lg) {
-		padding-top: 0;
-	}
-	
 	.nav-item:not(:first-child) {
 		margin-left: 1.8rem;
 	}
@@ -137,9 +138,9 @@
 				font-size: 11px;
 				font-weight: 500;
 				border-radius: 50%;
-				border: 1px solid #fff;
+				border: 1px solid  $white;
 				background-color: #ff6f61;
-				color: #fff;
+				color:  $white;
 			}
 			
 		}
@@ -153,22 +154,17 @@
 
 #top-links {
 	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-right: 1.875rem;		
-		}
+		padding-right: 1.875rem;
 	}
 
 	a.nav-link {
 		color: #adb4a4;
 		display: block;
 		font-size: 0.75rem;	
-		
-		@include media-breakpoint-up(lg) {
-			padding: 0;		
-		}
+		padding: 0;
 
 		&:hover {
-			color: $topbar-hover-color;
+			color: $theme-color;
 		}
 	}
 
@@ -183,15 +179,12 @@
 		border: 0;
 		top: 1.5rem;
 		left: 0;
-		width: 100%;		
+		width: 8.75rem;	
 		margin: 0;
 		border-top: 3px solid $link-hover-color;
+
 		@include border-radius(0);
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
-
-		@include media-breakpoint-up(lg) {
-			width: 8.75rem;
-		}
 
 		a.dropdown-item {
 			color: $heading-color;
